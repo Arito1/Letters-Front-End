@@ -15,6 +15,7 @@
     #0f172a;
 
   padding: 48px 24px;
+  overflow-x: hidden;
 }
 
 /* ===== Paper ===== */
@@ -120,7 +121,9 @@
   white-space: pre-wrap;
   max-height: calc(100vh - 320px);
   overflow-y: auto;
+  box-sizing: border-box;
   padding-right: 12px;
+  overflow-x: hidden;
 }
 
 .letter-text::-webkit-scrollbar {
@@ -150,9 +153,7 @@
 /* ===== Premium animation ===== */
 
 .letter-animate {
-  animation:
-    paperFloatIn 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards,
-    paperBreath 20s ease-in-out infinite 2.4s;
+  animation: paperFloatIn 2.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes paperFloatIn {
